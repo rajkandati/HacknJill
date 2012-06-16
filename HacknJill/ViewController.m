@@ -7,17 +7,33 @@
 //
 
 #import "ViewController.h"
+#import "NyTimesData.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    NSMutableArray *events;
+    NyTimesData *nyTimesData;
+    
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+        nyTimesData = [[NyTimesData alloc] init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"%@", [nyTimesData getCategories]);
+    NSLog(@"%@", [nyTimesData getSubCategories]);
+    
 }
 
 - (void)viewDidUnload
@@ -28,7 +44,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 @end
