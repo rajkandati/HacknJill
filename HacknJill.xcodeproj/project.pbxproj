@@ -15,6 +15,14 @@
 		39CA5370158C3B6F0008A317 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA536F158C3B6F0008A317 /* AppDelegate.m */; };
 		39CA5373158C3B6F0008A317 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39CA5371158C3B6F0008A317 /* MainStoryboard.storyboard */; };
 		39CA5376158C3B6F0008A317 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA5375158C3B6F0008A317 /* ViewController.m */; };
+		39CA5383158C42FC0008A317 /* NyTimesDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA5382158C42FC0008A317 /* NyTimesDataFetcher.m */; };
+		39CA5397158C48180008A317 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA538C158C48180008A317 /* NSObject+SBJSON.m */; };
+		39CA5398158C48180008A317 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA538E158C48180008A317 /* NSString+SBJSON.m */; };
+		39CA5399158C48180008A317 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA5390158C48180008A317 /* SBJSON.m */; };
+		39CA539A158C48180008A317 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA5392158C48180008A317 /* SBJsonBase.m */; };
+		39CA539B158C48180008A317 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA5394158C48180008A317 /* SBJsonParser.m */; };
+		39CA539C158C48180008A317 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA5396158C48180008A317 /* SBJsonWriter.m */; };
+		39CA53A2158CCCD50008A317 /* NyTimesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA53A1158CCCD50008A317 /* NyTimesData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +30,34 @@
 		39CA535F158C3B6E0008A317 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		39CA5361158C3B6E0008A317 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		39CA5363158C3B6E0008A317 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		39CA5367158C3B6F0008A317 /* HacknJill-Info.plist */ = {isa = PBXFileReference; path = "HacknJill-Info.plist"; sourceTree = "<group>"; };
+		39CA5367158C3B6F0008A317 /* HacknJill-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HacknJill-Info.plist"; sourceTree = "<group>"; };
 		39CA5369158C3B6F0008A317 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39CA536B158C3B6F0008A317 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		39CA536D158C3B6F0008A317 /* HacknJill-Prefix.pch */ = {isa = PBXFileReference; path = "HacknJill-Prefix.pch"; sourceTree = "<group>"; };
-		39CA536E158C3B6F0008A317 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		39CA536D158C3B6F0008A317 /* HacknJill-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HacknJill-Prefix.pch"; sourceTree = "<group>"; };
+		39CA536E158C3B6F0008A317 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39CA536F158C3B6F0008A317 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		39CA5372158C3B6F0008A317 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		39CA5374158C3B6F0008A317 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		39CA5374158C3B6F0008A317 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		39CA5375158C3B6F0008A317 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39CA5380158C42170008A317 /* NYTimesAPIKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTimesAPIKeys.h; sourceTree = "<group>"; };
+		39CA5381158C42FC0008A317 /* NyTimesDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyTimesDataFetcher.h; sourceTree = "<group>"; };
+		39CA5382158C42FC0008A317 /* NyTimesDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NyTimesDataFetcher.m; sourceTree = "<group>"; };
+		39CA5388158C46910008A317 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		39CA538A158C48180008A317 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		39CA538B158C48180008A317 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		39CA538C158C48180008A317 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		39CA538D158C48180008A317 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		39CA538E158C48180008A317 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		39CA538F158C48180008A317 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		39CA5390158C48180008A317 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		39CA5391158C48180008A317 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		39CA5392158C48180008A317 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		39CA5393158C48180008A317 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		39CA5394158C48180008A317 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		39CA5395158C48180008A317 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		39CA5396158C48180008A317 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		39CA53A0158CCCD50008A317 /* NyTimesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NyTimesData.h; sourceTree = "<group>"; };
+		39CA53A1158CCCD50008A317 /* NyTimesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NyTimesData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +109,11 @@
 				39CA5371158C3B6F0008A317 /* MainStoryboard.storyboard */,
 				39CA5374158C3B6F0008A317 /* ViewController.h */,
 				39CA5375158C3B6F0008A317 /* ViewController.m */,
+				39CA53A0158CCCD50008A317 /* NyTimesData.h */,
+				39CA53A1158CCCD50008A317 /* NyTimesData.m */,
+				39CA5381158C42FC0008A317 /* NyTimesDataFetcher.h */,
+				39CA5382158C42FC0008A317 /* NyTimesDataFetcher.m */,
+				39CA5388158C46910008A317 /* Constants.h */,
 				39CA5366158C3B6F0008A317 /* Supporting Files */,
 			);
 			path = HacknJill;
@@ -94,8 +126,30 @@
 				39CA5368158C3B6F0008A317 /* InfoPlist.strings */,
 				39CA536B158C3B6F0008A317 /* main.m */,
 				39CA536D158C3B6F0008A317 /* HacknJill-Prefix.pch */,
+				39CA5380158C42170008A317 /* NYTimesAPIKeys.h */,
+				39CA5389158C48180008A317 /* JSON */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39CA5389158C48180008A317 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				39CA538A158C48180008A317 /* JSON.h */,
+				39CA538B158C48180008A317 /* NSObject+SBJSON.h */,
+				39CA538C158C48180008A317 /* NSObject+SBJSON.m */,
+				39CA538D158C48180008A317 /* NSString+SBJSON.h */,
+				39CA538E158C48180008A317 /* NSString+SBJSON.m */,
+				39CA538F158C48180008A317 /* SBJSON.h */,
+				39CA5390158C48180008A317 /* SBJSON.m */,
+				39CA5391158C48180008A317 /* SBJsonBase.h */,
+				39CA5392158C48180008A317 /* SBJsonBase.m */,
+				39CA5393158C48180008A317 /* SBJsonParser.h */,
+				39CA5394158C48180008A317 /* SBJsonParser.m */,
+				39CA5395158C48180008A317 /* SBJsonWriter.h */,
+				39CA5396158C48180008A317 /* SBJsonWriter.m */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +217,14 @@
 				39CA536C158C3B6F0008A317 /* main.m in Sources */,
 				39CA5370158C3B6F0008A317 /* AppDelegate.m in Sources */,
 				39CA5376158C3B6F0008A317 /* ViewController.m in Sources */,
+				39CA5383158C42FC0008A317 /* NyTimesDataFetcher.m in Sources */,
+				39CA5397158C48180008A317 /* NSObject+SBJSON.m in Sources */,
+				39CA5398158C48180008A317 /* NSString+SBJSON.m in Sources */,
+				39CA5399158C48180008A317 /* SBJSON.m in Sources */,
+				39CA539A158C48180008A317 /* SBJsonBase.m in Sources */,
+				39CA539B158C48180008A317 /* SBJsonParser.m in Sources */,
+				39CA539C158C48180008A317 /* SBJsonWriter.m in Sources */,
+				39CA53A2158CCCD50008A317 /* NyTimesData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
